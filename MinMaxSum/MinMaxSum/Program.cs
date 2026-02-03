@@ -6,7 +6,7 @@
         {
             //Console.WriteLine("List numbrites");
 
-            int[] numbers = new int[10] { 2, 10, 15, 5, 4, 3, 1, 9, 8, 12 };
+            int[] numbers = new int[10] { 2, 10, 15, 3, 4, 19, 1, 9, 8, 12 };
             ////max
             //Console.WriteLine(numbers.Max());
             ////min
@@ -25,9 +25,18 @@
             {
                 Console.WriteLine(i);
             }
-             
-            //sorteerib numbrid alates suuremast väiksemani
 
+            //sorteerib numbrid alates suuremast väiksemani
+            Console.WriteLine("Sorteerib numbrid alates suurmeast väiksemani");
+            Array.Reverse(numbers);
+            foreach (int j in numbers)
+            {
+                Console.WriteLine(j);
+            }
+            Console.WriteLine("----------------------------");
+            //KASUTATE BINARYSEARCH-i
+            //kirjuta lühidalt, mis see tähendab 
+            Console.WriteLine(Array.BinarySearch(numbers, 6));
         }
     }
 }
